@@ -1,0 +1,7 @@
+rm *.o   //REMOVE TODOS OS ARQUIVOS .o
+
+gcc -o teste2.o -c teste2.c   //COMPILA O .c E CRIA ARQUIVO OBJETO .o
+
+gcc -o prog teste.o teste2.o   //CRIA EXECUTÁVEL prog A PARTIR DOS OBJETOS teste.o E teste2.o
+
+./prog   //RODA EXECUTÁVEL
