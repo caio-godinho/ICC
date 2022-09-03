@@ -1,0 +1,26 @@
+We use the typedef keyword to create an alias name for data types. 
+It is commonly used with structures to simplify the syntax of declaring variables.
+
+-This code
+
+    struct Distance{
+        int feet;
+        float inch;
+    };
+
+    int main() {
+        struct Distance d1, d2;
+    }
+
+-Is equivalent to
+
+    typedef struct Distance{
+        int feet;
+        float inch;
+    } distances;
+
+    int main(){
+        distances d1, d2;
+    }
+
+    

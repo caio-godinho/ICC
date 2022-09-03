@@ -1,0 +1,32 @@
+In C programming, a struct (or structure) is a collection of variables (can be of different types) under a single name.
+
+Here's how we create structure variables:
+
+struct Person
+{
+    char name[50];
+    int citNo;
+    float salary;
+};
+
+int main()
+{
+    struct Person person1, person2, p[20];
+    return 0;
+}
+
+        *OR*
+
+struct Person {
+    char name[50];
+    int citNo;
+    float salary;
+} person1, person2, p[20];
+
+
+There are two types of operators used for accessing members of a structure.
+    . - Member operator
+    -> - Structure pointer operator
+
+Suppose, you want to access the salary of person2. Here's how you can do it:
+    person2.salary
